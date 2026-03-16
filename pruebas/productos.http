@@ -1,0 +1,38 @@
+### Obtener todos los productos
+GET http://127.0.0.1:8000/productos
+Accept: application/json
+
+
+### Obtener producto por ID
+GET http://127.0.0.1:8000/productos/8
+Accept: application/json
+
+
+### Crear nuevo producto
+POST http://127.0.0.1:8000/productos
+Content-Type: application/json
+
+{
+  "nombre": "Televisor Samsung 55 pulgadas",
+  "categoria": "Electronica",
+  "cantidad": 5,
+  "valor_unitario": 1200000.00,
+  "id_proveedor": 8
+}
+
+
+### Actualizar producto
+PUT http://127.0.0.1:8000/productos/9
+Content-Type: application/json
+
+{
+  "nombre": "Pantalla Tactil",
+  "categoria": "Electronica",
+  "cantidad": 121,
+  "valor_unitario": 100000,
+  "id_proveedor": 8
+}
+
+
+### Eliminar producto
+DELETE http://127.0.0.1:8000/productos/9

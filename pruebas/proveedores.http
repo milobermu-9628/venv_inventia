@@ -1,0 +1,36 @@
+### Obtener todos los proveedores
+GET http://127.0.0.1:8000/proveedores
+Accept: application/json
+
+
+### Obtener proveedor por ID
+GET http://127.0.0.1:8000/proveedores/1
+Accept: application/json
+
+
+### Crear proveedor
+POST http://127.0.0.1:8000/proveedores
+Content-Type: application/json
+
+{
+  "nombre": "Tecnologia SENA",
+  "telefono": "3001234567",
+  "email": "ventas@tecnologiaglobalsena.com",
+  "direccion": "Bogotá"
+}
+
+
+### Actualizar proveedor
+PUT http://127.0.0.1:8000/proveedores/6
+Content-Type: application/json
+
+{
+  "nombre": "Tecnologia Global SAS",
+  "telefono": "3009876543",
+  "email": "contacto@tecnologiaglobal.com",
+  "direccion": "Bogotá - Colombia"
+}
+
+
+### Eliminar proveedor
+DELETE http://127.0.0.1:8000/proveedores/6

@@ -1,0 +1,34 @@
+### Obtener todos los empleados
+GET http://127.0.0.1:8000/empleados
+Accept: application/json
+
+
+### Obtener empleado por ID
+GET http://127.0.0.1:8000/empleados/1
+Accept: application/json
+
+
+### Crear empleado
+POST http://127.0.0.1:8000/empleados
+Content-Type: application/json
+
+{
+  "nombre": "Camilo Vargas",
+  "cargo": "Administrador",
+  "email": "camilo@inventia.com"
+}
+
+
+### Actualizar empleado
+PUT http://127.0.0.1:8000/empleados/1
+Content-Type: application/json
+
+{
+  "nombre": "Miguel Angel",
+  "cargo": "Supervisor",
+  "email": "miguel.supervisor@inventia.com"
+}
+
+
+### Eliminar empleado
+DELETE http://127.0.0.1:8000/empleados/6
