@@ -1,10 +1,10 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 import os
 
 # Cargar variables de entorno desde .env
-load_dotenv()
+#load_dotenv()
 
 DB_USER = os.getenv("DB_USER")
 DB_PASSWORD = os.getenv("DB_PASSWORD")
